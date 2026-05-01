@@ -8,10 +8,12 @@ Script Purpose:
 
     The procedure truncates existing data before loading fresh
     records, tracks execution time, and logs errors if loading fails.
+for usage run : EXEC bronze.bronze_load 
 
 WARNING:
     Running this procedure will delete existing data from all
     bronze tables before reloading source files.
+
 */
 
 CREATE OR ALTER PROCEDURE bronze.bronze_load AS
